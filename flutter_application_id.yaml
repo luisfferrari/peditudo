@@ -1,7 +1,7 @@
 flutter_application_id:
   android:
-    id: "online.edentech.fuodz"
+    id: "com.peditudo.api"
     name: "Glover"
   ios:
-    id: "online.edentech.fuodz"
+    id: "com.peditudo.api"
     name: "Glover"
