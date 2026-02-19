@@ -26,7 +26,7 @@ jobs:
         env:
           APP_STORE_CONNECT_API_KEY: ${{ secrets.APP_STORE_CONNECT_API_KEY }}
           APP_STORE_CONNECT_KEY_ID: ${{ secrets.APP_STORE_CONNECT_KEY_ID }}
-          APP_STORE_CONNECT_ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}
+          APP_STORE_CONNECT_ISSUER_ID: ${{ secrets.APPLE_TEAM_ID }}
           APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
         run: |
           mkdir -p ios/fastlane
@@ -41,12 +41,6 @@ jobs:
                 key_content: ENV["APP_STORE_CONNECT_API_KEY"],
                 duration: 1200,
                 in_house: false
-              )
-
-              match(
-                type: "appstore",
-                api_key: api_key,
-                readonly: false
               )
 
               build_app(
