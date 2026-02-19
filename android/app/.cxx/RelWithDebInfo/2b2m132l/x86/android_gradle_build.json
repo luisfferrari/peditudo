@@ -1,0 +1,28 @@
+{
+  "buildFiles": [
+    "/Users/luizfelipe/Downloads/flutter/packages/flutter_tools/gradle/src/main/groovy/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/luizfelipe/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/Users/luizfelipe/Downloads/glover-1770nulled/codecanyon-31145802-fuodz-grocery-food-pharmacy-store-parcelcourier-delivery-mobile-app-with-php-laravel-backend/Apps/Customer/New Owners/android/app/.cxx/RelWithDebInfo/2b2m132l/x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/luizfelipe/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/Users/luizfelipe/Downloads/glover-1770nulled/codecanyon-31145802-fuodz-grocery-food-pharmacy-store-parcelcourier-delivery-mobile-app-with-php-laravel-backend/Apps/Customer/New Owners/android/app/.cxx/RelWithDebInfo/2b2m132l/x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {},
+  "toolchains": {
+    "toolchain": {
+      "cCompilerExecutable": "/Users/luizfelipe/Library/Android/sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang.lld",
+      "cppCompilerExecutable": "/Users/luizfelipe/Library/Android/sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++.lld"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": []
+}

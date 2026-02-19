@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "578689213016",
+    "project_id": "mobiucar-peditudo-2026",
+    "storage_bucket": "mobiucar-peditudo-2026.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:578689213016:android:ab5ffba1680fca32ebe02d",
+        "android_client_info": {
+          "package_name": "com.peditudo.api"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "578689213016-9oqvn0kii3pu85vcqh09k08q3ic8og2p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.peditudo.api",
+            "certificate_hash": "bfcbf5a59a50534cfe574df46d7174506855629e"
+          }
+        },
+        {
+          "client_id": "578689213016-bnc5u0c7gq92c2v0lpg3kj45q0j4paqp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCU0F8Gapp9Khlzo43q7_E2dGfF9dMX08"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "578689213016-bnc5u0c7gq92c2v0lpg3kj45q0j4paqp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
