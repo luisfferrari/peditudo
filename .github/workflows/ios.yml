@@ -1,4 +1,4 @@
-name: iOS Build
+name: iOS TestFlight
 
 on:
   push:
@@ -22,5 +22,50 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
-      - name: Build iOS (no codesign)
-        run: flutter build ios --release --no-codesign
+      - name: Install Fastlane
+        run: sudo gem install fastlane
+
+      - name: Build and Upload
+        env:
+          MATCH_PASSWORD: ${{ secrets.MATCH_PASSWORD }}
+          MATCH_GIT_BASIC_AUTHORIZATION: ${{ secrets.MATCH_GIT_TOKEN }}
+          APP_STORE_CONNECT_API_KEY: ${{ secrets.APP_STORE_CONNECT_API_KEY }}
+          APP_STORE_CONNECT_KEY_ID: ${{ secrets.APP_STORE_CONNECT_KEY_ID }}
+          APP_STORE_CONNECT_ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}
+        run: |
+          mkdir -p ios/fastlane
+          cat > ios/fastlane/Fastfile <<EOF
+          default_platform(:ios)
+
+          platform :ios do
+            lane :beta do
+              api_key = app_store_connect_api_key(
+                key_id: ENV["APP_STORE_CONNECT_KEY_ID"],
+                issuer_id: ENV["APP_STORE_CONNECT_ISSUER_ID"],
+                key_content: ENV["APP_STORE_CONNECT_API_KEY"],
+                duration: 1200,
+                in_house: false
+              )
+
+              match(
+                type: "appstore",
+                git_url: "https://github.com/luisfferrari/peditudo-certificates.git",
+                readonly: false,
+                api_key: api_key
+              )
+
+              build_app(
+                workspace: "Runner.xcworkspace",
+                scheme: "Runner",
+                export_method: "app-store"
+              )
+
+              upload_to_testflight(
+                api_key: api_key
+              )
+            end
+          end
+          EOF
+
+          cd ios
+          fastlane beta
