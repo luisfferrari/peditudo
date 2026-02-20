@@ -68,13 +68,14 @@ jobs:
                 scheme: "Runner",
                 export_method: "app-store",
                 clean: true,
-                xcargs: "-allowProvisioningUpdates DEVELOPMENT_TEAM=28XM88M85J",
                 export_options: {
+                  method: "app-store",
                   signingStyle: "manual",
                   provisioningProfiles: {
                     "com.peditudo.api" => "match AppStore com.peditudo.api"
                   }
-                }
+                },
+                xcargs: "CODE_SIGN_STYLE=Manual DEVELOPMENT_TEAM=28XM88M85J CODE_SIGN_IDENTITY='Apple Distribution'"
               )
 
               upload_to_testflight(
