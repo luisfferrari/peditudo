@@ -59,7 +59,7 @@ jobs:
                 app_identifier: "com.peditudo.api",
                 git_url: "https://#{ENV['MATCH_GIT_TOKEN']}@github.com/luisfferrari/peditudo-certificates.git",
                 git_branch: "main",
-                readonly: false,
+                force: true,
                 api_key: api_key
               )
 
@@ -67,15 +67,7 @@ jobs:
                 workspace: "Runner.xcworkspace",
                 scheme: "Runner",
                 export_method: "app-store",
-                clean: true,
-                export_options: {
-                  method: "app-store",
-                  signingStyle: "manual",
-                  provisioningProfiles: {
-                    "com.peditudo.api" => "match AppStore com.peditudo.api"
-                  }
-                },
-                xcargs: "CODE_SIGN_STYLE=Manual DEVELOPMENT_TEAM=28XM88M85J CODE_SIGN_IDENTITY='Apple Distribution'"
+                clean: true
               )
 
               upload_to_testflight(
