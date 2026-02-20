@@ -50,6 +50,8 @@ jobs:
               match(
                 type: "appstore",
                 git_url: "https://github.com/luisfferrari/peditudo-certificates.git",
+                git_branch: "main",
+                git_basic_authorization: ENV["MATCH_GIT_BASIC_AUTHORIZATION"],
                 readonly: false,
                 api_key: api_key
               )
