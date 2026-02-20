@@ -66,7 +66,15 @@ jobs:
               build_app(
                 workspace: "Runner.xcworkspace",
                 scheme: "Runner",
-                export_method: "app-store"
+                export_method: "app-store",
+                clean: true,
+                xcargs: "-allowProvisioningUpdates DEVELOPMENT_TEAM=28XM88M85J",
+                export_options: {
+                  signingStyle: "manual",
+                  provisioningProfiles: {
+                    "com.peditudo.api" => "match AppStore com.peditudo.api"
+                  }
+                }
               )
 
               upload_to_testflight(
