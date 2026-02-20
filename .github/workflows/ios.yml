@@ -20,7 +20,14 @@ jobs:
           architecture: x64
 
       - name: Install dependencies
-        run: flutter pub get
+        run: |
+          flutter clean
+          flutter pub get
+          cd ios
+          rm -rf Pods Podfile.lock
+          pod repo update
+          pod install
+          cd ..
 
       - name: Install Fastlane
         run: sudo gem install fastlane
