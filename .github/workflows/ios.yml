@@ -49,6 +49,7 @@ jobs:
 
               match(
                 type: "appstore",
+                app_identifier: "com.peditudo.api",
                 git_url: "https://#{ENV['MATCH_GIT_TOKEN']}@github.com/luisfferrari/peditudo-certificates.git",
                 git_branch: "main",
                 readonly: false,
