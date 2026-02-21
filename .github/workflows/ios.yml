@@ -68,7 +68,8 @@ jobs:
                 scheme: "Runner",
                 configuration: "Release",
                 clean: true,
-                export_method: "app-store"
+                export_method: "app-store",
+                xcargs: "-allowProvisioningUpdates CODE_SIGN_STYLE=Automatic DEVELOPMENT_TEAM=28XM88M85J"
               )
 
               upload_to_testflight(
