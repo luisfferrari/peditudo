@@ -41,7 +41,7 @@ jobs:
           APP_STORE_CONNECT_ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}
         run: |
           mkdir -p ios/fastlane
-          cat > ios/fastlane/Fastfile <<'EOF'
+          cat > ios/fastlane/Fastfile <<EOF
           default_platform(:ios)
 
           platform :ios do
