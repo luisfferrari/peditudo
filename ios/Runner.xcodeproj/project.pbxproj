@@ -410,7 +410,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
 				);
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 28XM88M85J;   
 				PRODUCT_BUNDLE_IDENTIFIER = com.peditudo.api;
 				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.peditudo.api";
@@ -626,7 +626,7 @@
 			buildConfigurations = (
 				97C147061CF9000F007C117D /* Debug */,
 				97C147071CF9000F007C117D /* Release */,
-				249021D4217E4FDB00AE95B9 /* Profile */,
+				97C147071CF9000F007C117D /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
