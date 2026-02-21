@@ -66,6 +66,7 @@ jobs:
               build_app(
                 workspace: "Runner.xcworkspace",
                 scheme: "Runner",
+                configuration: "Release",
                 clean: true,
                 export_method: "app-store"
               )
