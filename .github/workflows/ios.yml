@@ -67,15 +67,7 @@ jobs:
                 workspace: "Runner.xcworkspace",
                 scheme: "Runner",
                 clean: true,
-                export_method: "app-store",
-                export_options: {
-                  method: "app-store",
-                  signingStyle: "manual",
-                  provisioningProfiles: {
-                    "com.peditudo.api" => ENV["sigh_com.peditudo.api_appstore_profile-name"]
-                  }
-                },
-                xcargs: "CODE_SIGN_STYLE=Manual DEVELOPMENT_TEAM=28XM88M85J CODE_SIGN_IDENTITY='Apple Distribution'"
+                export_method: "app-store"
               )
 
               upload_to_testflight(
