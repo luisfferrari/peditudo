@@ -41,7 +41,7 @@ jobs:
           APP_STORE_CONNECT_ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}
         run: |
           mkdir -p ios/fastlane
-          cat > ios/fastlane/Fastfile <<EOF
+          cat > ios/fastlane/Fastfile <<'EOF'
           default_platform(:ios)
 
           platform :ios do
@@ -75,7 +75,7 @@ jobs:
                     "com.peditudo.api" => "match AppStore com.peditudo.api"
                   }
                 },
-                xcargs: "CODE_SIGN_STYLE=Manual DEVELOPMENT_TEAM=28XM88M85J"
+                xcargs: "CODE_SIGN_STYLE=Manual DEVELOPMENT_TEAM=28XM88M85J CODE_SIGN_IDENTITY='Apple Distribution'"
               )
 
               upload_to_testflight(
