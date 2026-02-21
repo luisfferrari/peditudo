@@ -75,7 +75,7 @@ jobs:
                     "com.peditudo.api" => "match AppStore com.peditudo.api"
                   }
                 },
-                xcargs: "CODE_SIGN_STYLE=Manual DEVELOPMENT_TEAM=28XM88M85J CODE_SIGN_IDENTITY='Apple Distribution'"
+                xcargs: "CODE_SIGN_STYLE=Manual DEVELOPMENT_TEAM=28XM88M85J"
               )
 
               upload_to_testflight(
