@@ -69,7 +69,6 @@ jobs:
                 configuration: "Release",
                 clean: true,
                 export_method: "app-store",
-                xcargs: "CODE_SIGN_IDENTITY='Apple Distribution'"
               )
 
               upload_to_testflight(
