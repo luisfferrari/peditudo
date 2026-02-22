@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: macos-14
+    runs-on: macos-13   # 🔥 evita problemas do Xcode 15.4
 
     steps:
       - uses: actions/checkout@v4
@@ -18,19 +18,28 @@ jobs:
           flutter-version: '3.29.3'
           channel: 'stable'
           architecture: x64
+          cache: false
 
-      - name: Install dependencies
+      # 🔥 Limpeza pesada para evitar cache antigo do inappwebview
+      - name: Clean Flutter & Pub Cache
         run: |
           flutter clean
+          rm -rf ~/.pub-cache
+          rm -f pubspec.lock
           flutter pub get
+
+      - name: Clean iOS Pods
+        run: |
           cd ios
           rm -rf Pods Podfile.lock
-          pod repo update
-          pod install
+          pod deintegrate
+          pod install --repo-update
           cd ..
 
       - name: Install Fastlane
-        run: sudo gem install fastlane
+        run: |
+          gem install bundler
+          gem install fastlane
 
       - name: Build and Upload
         env:
@@ -41,6 +50,7 @@ jobs:
           APP_STORE_CONNECT_ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}
         run: |
           mkdir -p ios/fastlane
+
           cat > ios/fastlane/Fastfile <<EOF
           default_platform(:ios)
 
@@ -64,15 +74,16 @@ jobs:
                 api_key: api_key
               )
 
-              # 🔥 Flutter build sem assinatura (quem assina é o match)
+              # 🔥 build flutter sem assinatura
               sh("flutter build ios --release --no-codesign")
 
               build_app(
                 workspace: "Runner.xcworkspace",
                 scheme: "Runner",
                 configuration: "Release",
-                clean: true,
                 export_method: "app-store",
+                clean: true,
+                xcargs: "CODE_SIGN_STYLE=Manual DEVELOPMENT_TEAM=28XM88M85J",
                 export_options: {
                   provisioningProfiles: {
                     "com.peditudo.api" => "match AppStore com.peditudo.api"
@@ -84,7 +95,6 @@ jobs:
                 api_key: api_key,
                 skip_waiting_for_build_processing: true
               )
-
             end
           end
           EOF
