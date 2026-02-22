@@ -69,6 +69,7 @@ jobs:
                 configuration: "Release",
                 clean: true,
                 export_method: "app-store",
+                xcargs: "-allowProvisioningUpdates"
               )
 
               upload_to_testflight(
