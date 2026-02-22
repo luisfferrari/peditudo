@@ -597,10 +597,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
 				);
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 28XM88M85J;   
 				PRODUCT_BUNDLE_IDENTIFIER = com.peditudo.api;
-				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.peditudo.api";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
