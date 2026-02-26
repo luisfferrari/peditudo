@@ -33,7 +33,7 @@ android {
     defaultConfig {
         applicationId = "com.peditudo.api"
         minSdk = 23
-        targetSdk = 34
+        targetSdk = 35
         ndkVersion = "27.0.12077973"
         versionCode = flutter.versionCode
         versionName = flutter.versionName

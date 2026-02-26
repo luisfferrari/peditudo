@@ -33,8 +33,6 @@
     <application
         android:name="${applicationName}"
         android:label="Pedi Tudo"
-        android:usesCleartextTraffic="true"
-        android:requestLegacyExternalStorage="true"
         android:icon="@mipmap/launcher_icon"
         tools:replace="android:label">
 

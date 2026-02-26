@@ -1,23 +1,24 @@
 {
   "project_info": {
     "project_number": "578689213016",
+    "firebase_url": "https://mobiucar-peditudo-2026-default-rtdb.firebaseio.com",
     "project_id": "mobiucar-peditudo-2026",
     "storage_bucket": "mobiucar-peditudo-2026.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:578689213016:android:ab5ffba1680fca32ebe02d",
+        "mobilesdk_app_id": "1:578689213016:android:ec3e5d565ff4ab1bebe02d",
         "android_client_info": {
-          "package_name": "com.peditudo.api"
+          "package_name": "com.mobiucar.taxi"
         }
       },
       "oauth_client": [
         {
-          "client_id": "578689213016-9oqvn0kii3pu85vcqh09k08q3ic8og2p.apps.googleusercontent.com",
+          "client_id": "578689213016-2h538ovvmt7cnk1dnhmhbju7u8oo3dgj.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.peditudo.api",
+            "package_name": "com.mobiucar.taxi",
             "certificate_hash": "bfcbf5a59a50534cfe574df46d7174506855629e"
           }
         },
@@ -37,6 +38,109 @@
             {
               "client_id": "578689213016-bnc5u0c7gq92c2v0lpg3kj45q0j4paqp.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "578689213016-lag14akubdr6niflu5lh9mijd47o09g6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.peditudo.api"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:578689213016:android:ab5ffba1680fca32ebe02d",
+        "android_client_info": {
+          "package_name": "com.peditudo.api"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "578689213016-9oqvn0kii3pu85vcqh09k08q3ic8og2p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.peditudo.api",
+            "certificate_hash": "bfcbf5a59a50534cfe574df46d7174506855629e"
+          }
+        },
+        {
+          "client_id": "578689213016-vf82l9jbkp54n2fj9p7lp51f3kp8hglv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.peditudo.api",
+            "certificate_hash": "b5e5d30ebbb6d0e111f5bca96db11362e458ac56"
+          }
+        },
+        {
+          "client_id": "578689213016-bnc5u0c7gq92c2v0lpg3kj45q0j4paqp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCU0F8Gapp9Khlzo43q7_E2dGfF9dMX08"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "578689213016-bnc5u0c7gq92c2v0lpg3kj45q0j4paqp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "578689213016-lag14akubdr6niflu5lh9mijd47o09g6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.peditudo.api"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:578689213016:android:ce3f72cc2868e4ccebe02d",
+        "android_client_info": {
+          "package_name": "com.peditudo.emp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "578689213016-4pc9paq9493dreo0dvjern2ake88oms4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.peditudo.emp",
+            "certificate_hash": "bfcbf5a59a50534cfe574df46d7174506855629e"
+          }
+        },
+        {
+          "client_id": "578689213016-bnc5u0c7gq92c2v0lpg3kj45q0j4paqp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCU0F8Gapp9Khlzo43q7_E2dGfF9dMX08"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "578689213016-bnc5u0c7gq92c2v0lpg3kj45q0j4paqp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "578689213016-lag14akubdr6niflu5lh9mijd47o09g6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.peditudo.api"
+              }
             }
           ]
         }
