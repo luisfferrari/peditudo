@@ -129,7 +129,7 @@ dependencies:
   synchronized: ^3.0.1
   timelines_plus: ^1.0.4
   upgrader: ^11.3.1
-  url_launcher: ^6.3.0
+  url_launcher: 6.3.0
   velocity_x: ^4.3.1
   what3words: ^3.1.0
 
@@ -145,7 +145,7 @@ dependency_overrides:
   # win32: ^5.5.4
   package_info_plus: ^8.3.0
   webview_flutter_android: ^4.4.2
-  url_launcher_ios: ^6.3.1
+  url_launcher_ios: 6.3.1
 
 dev_dependencies:
   flutter_application_id: ^2.0.0-dev
