@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: macos-15
+    runs-on: macos-14   # mais estável que macos-15
 
     steps:
       - uses: actions/checkout@v4
@@ -18,22 +18,12 @@ jobs:
           flutter-version: '3.35.0'
           channel: 'stable'
           architecture: x64
-          cache: false
+          cache: true   # 🔥 ativa cache
 
-      # 🔥 limpeza pesada
-      - name: Clean Flutter & Pub
+      - name: Clean Flutter
         run: |
           flutter clean
-          rm -rf ~/.pub-cache
           flutter pub get
-
-      - name: Clean iOS Pods
-        run: |
-          cd ios
-          rm -rf Pods Podfile.lock
-          pod deintegrate
-          pod install --repo-update
-          cd ..
 
       - name: Install Fastlane
         run: |
@@ -80,7 +70,6 @@ jobs:
                 scheme: "Runner",
                 configuration: "Release",
                 export_method: "app-store",
-                clean: true,
                 codesigning_identity: "Apple Distribution",
                 xcargs: "CODE_SIGN_STYLE=Manual DEVELOPMENT_TEAM=28XM88M85J CODE_SIGN_IDENTITY='Apple Distribution'",
                 export_options: {
