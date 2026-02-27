@@ -81,7 +81,8 @@ jobs:
                 configuration: "Release",
                 export_method: "app-store",
                 clean: true,
-                xcargs: "CODE_SIGN_STYLE=Manual DEVELOPMENT_TEAM=28XM88M85J",
+                codesigning_identity: "Apple Distribution",
+                xcargs: "CODE_SIGN_STYLE=Manual DEVELOPMENT_TEAM=28XM88M85J CODE_SIGN_IDENTITY='Apple Distribution'",
                 export_options: {
                   provisioningProfiles: {
                     "com.peditudo.api" => "match AppStore com.peditudo.api"
