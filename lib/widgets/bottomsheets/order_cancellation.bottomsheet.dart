@@ -47,14 +47,14 @@ class _OrderCancellationBottomSheetState
                 [
                   (vm.isBusy || vm.busy(vm.reasons))
                       ? BusyIndicator().p(12).centered()
-                      : custom_radio.RadioGroup<String>.builder(  // RadioGroup<String>.builder(
+                      : custom_radio.RadioGroup<String>.builder(
                           spacebetween: Vx.dp48,
                           groupValue: _selectedReason,
                           onChanged: (value) => setState(() {
                             _selectedReason = value ?? "";
                           }),
                           items: vm.reasons,
-                          itemBuilder: (item) => RadioButtonBuilder(
+                          itemBuilder: (item) => Text(
                             item.tr().capitalized,
                           ),
                         ).py12(),
