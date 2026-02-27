@@ -124,8 +124,10 @@ class AppTheme {
   );
 
   //
-  TabBarTheme get tabBarTheme {
-    return TabBarTheme(
+//  TabBarTheme get tabBarTheme {
+//    return TabBarTheme(
+  TabBarThemeData get tabBarTheme {
+    return TabBarThemeData(
       indicatorSize: TabBarIndicatorSize.tab,
       labelColor: Utils.textColorByTheme(),
       unselectedLabelColor: Utils.textColorByTheme(),
