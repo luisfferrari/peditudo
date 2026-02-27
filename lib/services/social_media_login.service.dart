@@ -82,6 +82,7 @@ class SocialMediaLoginService {
   }
 
   //Facebook login
+/* 
   void facebookLogin(LoginViewModel model) async {
     //
     AlertService.showLoading();
@@ -140,6 +141,59 @@ class SocialMediaLoginService {
         AlertService.stopLoading();
         model.toastError("${result.message}");
       }
+    } catch (error) {
+      AlertService.stopLoading();
+      model.toastError("$error");
+    }
+  }
+*/
+  void facebookLogin(LoginViewModel model) async {
+    AlertService.showLoading();
+
+    try {
+      final LoginResult result = await FacebookAuth.instance.login(
+        permissions: ["email", "public_profile"],
+      );
+
+      if (result.status == LoginStatus.success) {
+        final AccessToken? accessToken = result.accessToken;
+
+        if (accessToken == null) {
+          throw "Facebook login failed".tr();
+        }
+
+        final OAuthCredential facebookAuthCredential =
+            FacebookAuthProvider.credential(
+          accessToken.token, // ✅ CORRIGIDO
+        );
+
+        UserCredential userAccount =
+            await FirebaseAuth.instance.signInWithCredential(
+          facebookAuthCredential,
+        );
+
+        final apiResponse = await model.authRequest.socialLogin(
+          userAccount.user!.email!,
+          accessToken.token, // ✅ CORRIGIDO
+          "facebook",
+        );
+
+        if (apiResponse != null) {
+          await model.handleDeviceLogin(apiResponse);
+        } else {
+          AlertService.stopLoading();
+          model.openRegister(
+            email: userAccount.user!.email!,
+            name: userAccount.user!.displayName ?? "",
+          );
+        }
+      } else {
+        AlertService.stopLoading();
+        model.toastError("${result.message}");
+      }
+    } on FirebaseAuthException catch (error) {
+      AlertService.stopLoading();
+      model.toastError("${error.message}");
     } catch (error) {
       AlertService.stopLoading();
       model.toastError("$error");

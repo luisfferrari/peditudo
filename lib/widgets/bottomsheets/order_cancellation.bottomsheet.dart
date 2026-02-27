@@ -5,7 +5,8 @@ import 'package:fuodz/view_models/order_cancellation.view_model.dart';
 import 'package:fuodz/widgets/busy_indicator.dart';
 import 'package:fuodz/widgets/buttons/custom_button.dart';
 import 'package:fuodz/widgets/custom_text_form_field.dart';
-import 'package:group_radio_button/group_radio_button.dart';
+// import 'package:group_radio_button/group_radio_button.dart';
+import 'package:group_radio_button/group_radio_button.dart' as custom_radio;
 import 'package:localize_and_translate/localize_and_translate.dart';
 import 'package:stacked/stacked.dart';
 import 'package:velocity_x/velocity_x.dart';
@@ -46,7 +47,7 @@ class _OrderCancellationBottomSheetState
                 [
                   (vm.isBusy || vm.busy(vm.reasons))
                       ? BusyIndicator().p(12).centered()
-                      : RadioGroup<String>.builder(
+                      : custom_radio.RadioGroup<String>.builder(  // RadioGroup<String>.builder(
                           spacebetween: Vx.dp48,
                           groupValue: _selectedReason,
                           onChanged: (value) => setState(() {
