@@ -1076,12 +1076,6 @@
       "languageVersion": "3.4"
     },
     {
-      "name": "group_radio_button",
-      "rootUri": "file:///home/fernando/.pub-cache/hosted/pub.dev/group_radio_button-1.2.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "gsettings",
       "rootUri": "file:///home/fernando/.pub-cache/hosted/pub.dev/gsettings-0.2.8",
       "packageUri": "lib/",
@@ -2216,7 +2210,7 @@
       "languageVersion": "3.7"
     }
   ],
-  "generated": "2026-02-27T15:46:55.998146Z",
+  "generated": "2026-02-27T17:44:48.970562Z",
   "generator": "pub",
   "generatorVersion": "3.7.2",
   "flutterRoot": "file:///home/fernando/development/flutter",
