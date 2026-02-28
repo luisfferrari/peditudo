@@ -177,7 +177,7 @@
     },
     {
       "name": "cloud_firestore",
-      "rootUri": "file:///home/fernando/.pub-cache/hosted/pub.dev/cloud_firestore-4.13.3",
+      "rootUri": "file:///home/fernando/.pub-cache/hosted/pub.dev/cloud_firestore-4.15.8",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
@@ -447,7 +447,7 @@
     },
     {
       "name": "firebase_auth",
-      "rootUri": "file:///home/fernando/.pub-cache/hosted/pub.dev/firebase_auth-4.15.3",
+      "rootUri": "file:///home/fernando/.pub-cache/hosted/pub.dev/firebase_auth-4.17.4",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
@@ -465,7 +465,7 @@
     },
     {
       "name": "firebase_core",
-      "rootUri": "file:///home/fernando/.pub-cache/hosted/pub.dev/firebase_core-2.24.2",
+      "rootUri": "file:///home/fernando/.pub-cache/hosted/pub.dev/firebase_core-2.27.0",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
@@ -483,9 +483,9 @@
     },
     {
       "name": "firebase_crashlytics",
-      "rootUri": "file:///home/fernando/.pub-cache/hosted/pub.dev/firebase_crashlytics-4.3.8",
+      "rootUri": "file:///home/fernando/.pub-cache/hosted/pub.dev/firebase_crashlytics-3.4.9",
       "packageUri": "lib/",
-      "languageVersion": "3.2"
+      "languageVersion": "2.18"
     },
     {
       "name": "firebase_crashlytics_platform_interface",
@@ -507,7 +507,7 @@
     },
     {
       "name": "firebase_messaging",
-      "rootUri": "file:///home/fernando/.pub-cache/hosted/pub.dev/firebase_messaging-14.7.10",
+      "rootUri": "file:///home/fernando/.pub-cache/hosted/pub.dev/firebase_messaging-14.7.14",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
@@ -1047,9 +1047,9 @@
     },
     {
       "name": "google_sign_in",
-      "rootUri": "file:///home/fernando/.pub-cache/hosted/pub.dev/google_sign_in-6.1.5",
+      "rootUri": "file:///home/fernando/.pub-cache/hosted/pub.dev/google_sign_in-6.2.1",
       "packageUri": "lib/",
-      "languageVersion": "2.19"
+      "languageVersion": "3.2"
     },
     {
       "name": "google_sign_in_android",
@@ -1617,7 +1617,7 @@
     },
     {
       "name": "qs_dart",
-      "rootUri": "file:///home/fernando/.pub-cache/hosted/pub.dev/qs_dart-1.7.1",
+      "rootUri": "file:///home/fernando/.pub-cache/hosted/pub.dev/qs_dart-1.7.2",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -2210,7 +2210,7 @@
       "languageVersion": "3.7"
     }
   ],
-  "generated": "2026-02-28T02:05:47.337010Z",
+  "generated": "2026-02-28T02:35:53.943732Z",
   "generator": "pub",
   "generatorVersion": "3.7.2",
   "flutterRoot": "file:///home/fernando/development/flutter",
