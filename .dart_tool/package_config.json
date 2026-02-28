@@ -177,9 +177,9 @@
     },
     {
       "name": "cloud_firestore",
-      "rootUri": "file:///home/fernando/.pub-cache/hosted/pub.dev/cloud_firestore-5.6.10",
+      "rootUri": "file:///home/fernando/.pub-cache/hosted/pub.dev/cloud_firestore-4.13.3",
       "packageUri": "lib/",
-      "languageVersion": "3.2"
+      "languageVersion": "2.18"
     },
     {
       "name": "cloud_firestore_platform_interface",
@@ -189,9 +189,9 @@
     },
     {
       "name": "cloud_firestore_web",
-      "rootUri": "file:///home/fernando/.pub-cache/hosted/pub.dev/cloud_firestore_web-4.4.10",
+      "rootUri": "file:///home/fernando/.pub-cache/hosted/pub.dev/cloud_firestore_web-3.12.5",
       "packageUri": "lib/",
-      "languageVersion": "3.4"
+      "languageVersion": "3.2"
     },
     {
       "name": "collection",
@@ -447,9 +447,9 @@
     },
     {
       "name": "firebase_auth",
-      "rootUri": "file:///home/fernando/.pub-cache/hosted/pub.dev/firebase_auth-5.3.4",
+      "rootUri": "file:///home/fernando/.pub-cache/hosted/pub.dev/firebase_auth-4.15.3",
       "packageUri": "lib/",
-      "languageVersion": "3.2"
+      "languageVersion": "2.18"
     },
     {
       "name": "firebase_auth_platform_interface",
@@ -465,9 +465,9 @@
     },
     {
       "name": "firebase_core",
-      "rootUri": "file:///home/fernando/.pub-cache/hosted/pub.dev/firebase_core-3.15.0",
+      "rootUri": "file:///home/fernando/.pub-cache/hosted/pub.dev/firebase_core-2.24.2",
       "packageUri": "lib/",
-      "languageVersion": "3.2"
+      "languageVersion": "2.18"
     },
     {
       "name": "firebase_core_platform_interface",
@@ -507,9 +507,9 @@
     },
     {
       "name": "firebase_messaging",
-      "rootUri": "file:///home/fernando/.pub-cache/hosted/pub.dev/firebase_messaging-15.2.8",
+      "rootUri": "file:///home/fernando/.pub-cache/hosted/pub.dev/firebase_messaging-14.7.10",
       "packageUri": "lib/",
-      "languageVersion": "3.2"
+      "languageVersion": "2.18"
     },
     {
       "name": "firebase_messaging_platform_interface",
@@ -2210,7 +2210,7 @@
       "languageVersion": "3.7"
     }
   ],
-  "generated": "2026-02-27T23:49:32.196512Z",
+  "generated": "2026-02-28T02:05:47.337010Z",
   "generator": "pub",
   "generatorVersion": "3.7.2",
   "flutterRoot": "file:///home/fernando/development/flutter",
